@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Mexcal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda</h1>
+
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                  </svg>
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div>
+            </div>
+              <div class="container-cart-products hidden-cart">
+                <div class="row-product">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-proucto-carrito">Mezcal de Jamaica</p>
+                            <span class="precio-producto-carrito">$120</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    </div>
+                </div>
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$120</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+              </div>
+        </div>
+    </header>
+
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="https://cdn.gencraft.com/prod/user/e4dc87a3-cc51-4c74-86c5-599d6e352d0b/5c11cd22-a417-41e3-9816-538252ebe1e1/images/image1_0_watermark.jpg?Expires=1691083044&Signature=Ru0dgFRaVuykV44AZQBsFyozPXdVCjzMaFrbusmDd~Bbe4bjgT63iL7T26VvvlZwmeV8jaEdNocM9DQmLABpCEsDljqL1rifZ~v-JXg9tbv9ci9-x4KkdjHUXtFvBRpu9a0xhjheBKyIeSeKPbAiPVBQxg76dEGQbCRk~TXq6TwgGXwR-yxWfZ6S-iTKuuuop0L7tDCJoU4S2pN3CCsfc0vtyxZwJDNv2Z0FD4f804SIZBqqdceM2Y1cdmN0nivewhh9mE47yUV5OevKtW2Qx31EyXVGX87Lwv91g5bFlgxu~wfNqJOA4IlUzvBGEPgu6CfR7NzH6FkdRpDnuCBbSg__&Key-Pair-Id=K3RDDB1TZ8BHT8" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Mezcal de Jamaica</h2>
+                <p class="price">$120</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.gencraft.com/prod/user/e4dc87a3-cc51-4c74-86c5-599d6e352d0b/6ad69bd3-eed2-4008-9861-3d883380527b/images/image0_0_watermark.jpg?Expires=1691083090&Signature=gQ~YZWhiEU-9hmkvk7Ea3g8MgAK8ESR2wDvoMtTtb81Q5pdPxg8R-snZ0P2Ifcepop4YVR-TkUbMlyQgFNL2gLYBInQm3a0CPkzkWAWxd9wV7LJk2~rbJFIwYgP9lhFlb3HUs4qGacfLRxe-gAmhVnh92VwHTxTjE~smORMKgA5prt10KcyRBov~N5E-mJGQPYhE63-ZrnM~sC7idVX~~8zG5Vr9K~cd-gN66vy0Q0drmOM4e~65~NPE8SRoF8xaf8hjjNExW-QTYRaNFAmqYF75AWK-1Wu7-~aV4wzV7jZPs-sLHC7WU5owdNcM2SSKn5j9VhkzdIRFYjz-rfEw1w__&Key-Pair-Id=K3RDDB1TZ8BHT8" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Mezcal de Nanche</h2>
+                <p class="price">$120</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.gencraft.com/prod/user/e4dc87a3-cc51-4c74-86c5-599d6e352d0b/c8f97776-7515-42e3-a824-657eeffa5a24/images/image1_0_watermark.jpg?Expires=1691083104&Signature=otaimS-1YTZGszYW0ewRNurhpzKJJXljTJjQFzRHxDIuLj5IR9Vz5i4OXizaRcBjXJ5xqPhH6JLHTHu1LEsh6zsPXQwJg1lay4KGqcUCheNouHLyeZYDHEyniVWVC~xu9ugN7G8TNMIXRnILEFrLhgvRJU6FgG3XAkRyV2jelT03stM~n-sx4GNKE0cP3LA9i~PERk2yqh4nF2YzcPPMKbIDu7yrmmgkPZUWzVB74SRaSe77LodGetuyKRCqmTO0Nmo7TZa9doNW3cwUYSOfjbyqloPVXJRV0EzISUhelKanOy9OeXeiIUZFt~-oJ23QGp7ffFsJpUhjiBgF0dZJfA__&Key-Pair-Id=K3RDDB1TZ8BHT8" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Mezcal de Cafe</h2>
+                <p class="price">$120</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.gencraft.com/prod/user/e4dc87a3-cc51-4c74-86c5-599d6e352d0b/23bd8e0e-f0b3-4eee-ab9a-b36d9bca2655/images/image1_0_watermark.jpg?Expires=1691083114&Signature=qlD5VcuoknAIja5dQgEDBpFq~ZykGISeC8YfQgVaaz8RoNfYVw1H5tt-mJRjxWEPSGRK0ScQgKMID3zXTRW60FVOejDLWn1HApzP9rOTM63GpRILtP-LjQ9tp23TGYl7d5KK-Wii3zK5RpVDdkBWYgpcd2oCV8jl39yLnqAmEk1vAWkPhuVDHYMj~cqRzU~krDEWv6GFzGV3E0kfopKSfMEB~7Puk5qgcsH0dvBgdehjocBpYJP-cbapBid3UV78GIiO4CtlB0b7cUUcNpsRC86Dzto4RB-sl6EJ0QbE9SfD9T5iCuDBsa32JxyxL6cKERaFEgtLNfnLFIIao3FOgA__&Key-Pair-Id=K3RDDB1TZ8BHT8" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Mezcal de Coco</h2>
+                <p class="price">$120</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="https://cdn.gencraft.com/prod/user/e4dc87a3-cc51-4c74-86c5-599d6e352d0b/4976529f-4d08-40a5-bc71-433d44d28658/images/image0_0_watermark.jpg?Expires=1691083123&Signature=AumEIFA0Ije~Xn9FDQ2joFegEWFVFwN1opLlOmPUdt1bxhCK9xJk17itdWXzyszd6soGWmt8d18Pw1i9lDLiBVJjynewkbixMlXpnptwW~PwfkKfo2d7--T0RI2j3aPcFmpvcvfo7KuU1yduBFs02aPcIiPJ69LPCXf67jaHgTPPXjbyGz3QUTw78Rrh99qupr9i2Cw5R-TqaAbkahkV169wKYjN6spVBKJ9pnh0yVscJYdYRyRpnR5rtW91Vml~UzxJt6H1tj5bfEpFupgotFrToIkgg5S6yAu2IvG5DQqDUDPjpRIiP3aZsW0LsfN97AKZZezl8kWM6s5FoPuAtQ__&Key-Pair-Id=K3RDDB1TZ8BHT8" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Mezcal de Jamaica</h2>
+                <p class="price">$120</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
